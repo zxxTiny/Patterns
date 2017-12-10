@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		910045401FDC08FD00E765AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100453F1FDC08FD00E765AB /* AppDelegate.m */; };
+		910045431FDC08FD00E765AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045421FDC08FD00E765AB /* ViewController.m */; };
+		910045461FDC08FD00E765AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910045441FDC08FD00E765AB /* Main.storyboard */; };
+		910045481FDC08FD00E765AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910045471FDC08FD00E765AB /* Assets.xcassets */; };
+		9100454B1FDC08FD00E765AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 910045491FDC08FD00E765AB /* LaunchScreen.storyboard */; };
+		9100454E1FDC08FD00E765AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100454D1FDC08FD00E765AB /* main.m */; };
+		910045581FDC0A1C00E765AB /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045571FDC0A1C00E765AB /* Circle.m */; };
+		9100455B1FDC0A5A00E765AB /* Square.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100455A1FDC0A5A00E765AB /* Square.m */; };
+		9100455E1FDC0A8600E765AB /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100455D1FDC0A8600E765AB /* Rectangle.m */; };
+		910045611FDC0AD100E765AB /* ShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045601FDC0AD100E765AB /* ShapeFactory.m */; };
+		910045641FDC0C4E00E765AB /* FactoryPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045631FDC0C4E00E765AB /* FactoryPatternViewController.m */; };
+		910045691FDC2D3300E765AB /* AbstractFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045681FDC2D3300E765AB /* AbstractFactory.m */; };
+		910045701FDC2F8100E765AB /* Red.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100456F1FDC2F8100E765AB /* Red.m */; };
+		910045731FDC2FC300E765AB /* Green.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045721FDC2FC300E765AB /* Green.m */; };
+		910045761FDC2FF100E765AB /* Blue.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045751FDC2FF100E765AB /* Blue.m */; };
+		910045791FDC307100E765AB /* MyShapeFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045781FDC307100E765AB /* MyShapeFactory.m */; };
+		9100457C1FDC314200E765AB /* MyColorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100457B1FDC314200E765AB /* MyColorFactory.m */; };
+		9100457F1FDC31CD00E765AB /* FactoryProducer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100457E1FDC31CD00E765AB /* FactoryProducer.m */; };
+		910045821FDC327100E765AB /* AbstractFactoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045811FDC327100E765AB /* AbstractFactoryViewController.m */; };
+		910045861FDC387000E765AB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045851FDC387000E765AB /* User.m */; };
+		910045891FDC3A0A00E765AB /* SingletonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045881FDC3A0A00E765AB /* SingletonViewController.m */; };
+		9100458F1FDC423500E765AB /* Wrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100458E1FDC423500E765AB /* Wrapper.m */; };
+		910045921FDC429400E765AB /* Bottle.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045911FDC429400E765AB /* Bottle.m */; };
+		910045951FDC42E100E765AB /* Burger.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045941FDC42E100E765AB /* Burger.m */; };
+		910045981FDC43C400E765AB /* ColdDrink.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045971FDC43C400E765AB /* ColdDrink.m */; };
+		9100459B1FDC440900E765AB /* VegBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100459A1FDC440900E765AB /* VegBurger.m */; };
+		9100459E1FDC464F00E765AB /* ChickenBurger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9100459D1FDC464F00E765AB /* ChickenBurger.m */; };
+		910045A11FDC46C500E765AB /* Coke.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045A01FDC46C500E765AB /* Coke.m */; };
+		910045A41FDC470700E765AB /* Pepsi.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045A31FDC470700E765AB /* Pepsi.m */; };
+		910045A71FDC483200E765AB /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045A61FDC483200E765AB /* Meal.m */; };
+		910045AA1FDC4AA300E765AB /* MealBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045A91FDC4AA300E765AB /* MealBuilder.m */; };
+		910045AD1FDC4BCD00E765AB /* BuilderPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045AC1FDC4BCD00E765AB /* BuilderPatternViewController.m */; };
+		910045B11FDD23D500E765AB /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045B01FDD23D500E765AB /* Subject.m */; };
+		910045B41FDD244800E765AB /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045B31FDD244800E765AB /* Observer.m */; };
+		910045B71FDD252600E765AB /* BinaryObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045B61FDD252600E765AB /* BinaryObserver.m */; };
+		910045BA1FDD26F900E765AB /* OctalObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045B91FDD26F900E765AB /* OctalObserver.m */; };
+		910045BD1FDD273000E765AB /* HexaObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045BC1FDD273000E765AB /* HexaObserver.m */; };
+		910045C01FDD289500E765AB /* ObserverPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045BF1FDD289500E765AB /* ObserverPatternViewController.m */; };
+		910045C61FDD36F000E765AB /* VlcPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045C51FDD36F000E765AB /* VlcPlayer.m */; };
+		910045C91FDD373B00E765AB /* Mp4Player.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045C81FDD373B00E765AB /* Mp4Player.m */; };
+		910045CC1FDD377100E765AB /* MediaAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045CB1FDD377100E765AB /* MediaAdapter.m */; };
+		910045CF1FDD39C000E765AB /* AdapterPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 910045CE1FDD39C000E765AB /* AdapterPatternViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9100453B1FDC08FD00E765AB /* DesignPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9100453E1FDC08FD00E765AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9100453F1FDC08FD00E765AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		910045411FDC08FD00E765AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		910045421FDC08FD00E765AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		910045451FDC08FD00E765AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		910045471FDC08FD00E765AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9100454A1FDC08FD00E765AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9100454C1FDC08FD00E765AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9100454D1FDC08FD00E765AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		910045551FDC09AF00E765AB /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		910045561FDC0A1C00E765AB /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		910045571FDC0A1C00E765AB /* Circle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		910045591FDC0A5A00E765AB /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		9100455A1FDC0A5A00E765AB /* Square.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Square.m; sourceTree = "<group>"; };
+		9100455C1FDC0A8600E765AB /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		9100455D1FDC0A8600E765AB /* Rectangle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		9100455F1FDC0AD100E765AB /* ShapeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeFactory.h; sourceTree = "<group>"; };
+		910045601FDC0AD100E765AB /* ShapeFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapeFactory.m; sourceTree = "<group>"; };
+		910045621FDC0C4E00E765AB /* FactoryPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryPatternViewController.h; sourceTree = "<group>"; };
+		910045631FDC0C4E00E765AB /* FactoryPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryPatternViewController.m; sourceTree = "<group>"; };
+		910045671FDC2D3300E765AB /* AbstractFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactory.h; sourceTree = "<group>"; };
+		910045681FDC2D3300E765AB /* AbstractFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractFactory.m; sourceTree = "<group>"; };
+		9100456D1FDC2E4500E765AB /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
+		9100456E1FDC2F8100E765AB /* Red.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Red.h; sourceTree = "<group>"; };
+		9100456F1FDC2F8100E765AB /* Red.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Red.m; sourceTree = "<group>"; };
+		910045711FDC2FC300E765AB /* Green.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Green.h; sourceTree = "<group>"; };
+		910045721FDC2FC300E765AB /* Green.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Green.m; sourceTree = "<group>"; };
+		910045741FDC2FF100E765AB /* Blue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Blue.h; sourceTree = "<group>"; };
+		910045751FDC2FF100E765AB /* Blue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blue.m; sourceTree = "<group>"; };
+		910045771FDC307100E765AB /* MyShapeFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyShapeFactory.h; sourceTree = "<group>"; };
+		910045781FDC307100E765AB /* MyShapeFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyShapeFactory.m; sourceTree = "<group>"; };
+		9100457A1FDC314200E765AB /* MyColorFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyColorFactory.h; sourceTree = "<group>"; };
+		9100457B1FDC314200E765AB /* MyColorFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyColorFactory.m; sourceTree = "<group>"; };
+		9100457D1FDC31CD00E765AB /* FactoryProducer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryProducer.h; sourceTree = "<group>"; };
+		9100457E1FDC31CD00E765AB /* FactoryProducer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryProducer.m; sourceTree = "<group>"; };
+		910045801FDC327100E765AB /* AbstractFactoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractFactoryViewController.h; sourceTree = "<group>"; };
+		910045811FDC327100E765AB /* AbstractFactoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractFactoryViewController.m; sourceTree = "<group>"; };
+		910045841FDC387000E765AB /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		910045851FDC387000E765AB /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		910045871FDC3A0A00E765AB /* SingletonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingletonViewController.h; sourceTree = "<group>"; };
+		910045881FDC3A0A00E765AB /* SingletonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingletonViewController.m; sourceTree = "<group>"; };
+		9100458B1FDC412200E765AB /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		9100458C1FDC413D00E765AB /* Packing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Packing.h; sourceTree = "<group>"; };
+		9100458D1FDC423500E765AB /* Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Wrapper.h; sourceTree = "<group>"; };
+		9100458E1FDC423500E765AB /* Wrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wrapper.m; sourceTree = "<group>"; };
+		910045901FDC429400E765AB /* Bottle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bottle.h; sourceTree = "<group>"; };
+		910045911FDC429400E765AB /* Bottle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bottle.m; sourceTree = "<group>"; };
+		910045931FDC42E100E765AB /* Burger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Burger.h; sourceTree = "<group>"; };
+		910045941FDC42E100E765AB /* Burger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Burger.m; sourceTree = "<group>"; };
+		910045961FDC43C400E765AB /* ColdDrink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColdDrink.h; sourceTree = "<group>"; };
+		910045971FDC43C400E765AB /* ColdDrink.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColdDrink.m; sourceTree = "<group>"; };
+		910045991FDC440900E765AB /* VegBurger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VegBurger.h; sourceTree = "<group>"; };
+		9100459A1FDC440900E765AB /* VegBurger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegBurger.m; sourceTree = "<group>"; };
+		9100459C1FDC464F00E765AB /* ChickenBurger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChickenBurger.h; sourceTree = "<group>"; };
+		9100459D1FDC464F00E765AB /* ChickenBurger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChickenBurger.m; sourceTree = "<group>"; };
+		9100459F1FDC46C500E765AB /* Coke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coke.h; sourceTree = "<group>"; };
+		910045A01FDC46C500E765AB /* Coke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coke.m; sourceTree = "<group>"; };
+		910045A21FDC470700E765AB /* Pepsi.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pepsi.h; sourceTree = "<group>"; };
+		910045A31FDC470700E765AB /* Pepsi.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pepsi.m; sourceTree = "<group>"; };
+		910045A51FDC483200E765AB /* Meal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		910045A61FDC483200E765AB /* Meal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		910045A81FDC4AA300E765AB /* MealBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MealBuilder.h; sourceTree = "<group>"; };
+		910045A91FDC4AA300E765AB /* MealBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealBuilder.m; sourceTree = "<group>"; };
+		910045AB1FDC4BCD00E765AB /* BuilderPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderPatternViewController.h; sourceTree = "<group>"; };
+		910045AC1FDC4BCD00E765AB /* BuilderPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuilderPatternViewController.m; sourceTree = "<group>"; };
+		910045AF1FDD23D500E765AB /* Subject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		910045B01FDD23D500E765AB /* Subject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+		910045B21FDD244800E765AB /* Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
+		910045B31FDD244800E765AB /* Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		910045B51FDD252600E765AB /* BinaryObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryObserver.h; sourceTree = "<group>"; };
+		910045B61FDD252600E765AB /* BinaryObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryObserver.m; sourceTree = "<group>"; };
+		910045B81FDD26F900E765AB /* OctalObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OctalObserver.h; sourceTree = "<group>"; };
+		910045B91FDD26F900E765AB /* OctalObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OctalObserver.m; sourceTree = "<group>"; };
+		910045BB1FDD273000E765AB /* HexaObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HexaObserver.h; sourceTree = "<group>"; };
+		910045BC1FDD273000E765AB /* HexaObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HexaObserver.m; sourceTree = "<group>"; };
+		910045BE1FDD289500E765AB /* ObserverPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObserverPatternViewController.h; sourceTree = "<group>"; };
+		910045BF1FDD289500E765AB /* ObserverPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserverPatternViewController.m; sourceTree = "<group>"; };
+		910045C21FDD365100E765AB /* MediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaPlayer.h; sourceTree = "<group>"; };
+		910045C31FDD369E00E765AB /* AdvancedMediaPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdvancedMediaPlayer.h; sourceTree = "<group>"; };
+		910045C41FDD36F000E765AB /* VlcPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VlcPlayer.h; sourceTree = "<group>"; };
+		910045C51FDD36F000E765AB /* VlcPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VlcPlayer.m; sourceTree = "<group>"; };
+		910045C71FDD373B00E765AB /* Mp4Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mp4Player.h; sourceTree = "<group>"; };
+		910045C81FDD373B00E765AB /* Mp4Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mp4Player.m; sourceTree = "<group>"; };
+		910045CA1FDD377100E765AB /* MediaAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaAdapter.h; sourceTree = "<group>"; };
+		910045CB1FDD377100E765AB /* MediaAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaAdapter.m; sourceTree = "<group>"; };
+		910045CD1FDD39C000E765AB /* AdapterPatternViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterPatternViewController.h; sourceTree = "<group>"; };
+		910045CE1FDD39C000E765AB /* AdapterPatternViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdapterPatternViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		910045381FDC08FD00E765AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		910045321FDC08FD00E765AB = {
+			isa = PBXGroup;
+			children = (
+				9100453D1FDC08FD00E765AB /* DesignPattern */,
+				9100453C1FDC08FD00E765AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9100453C1FDC08FD00E765AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9100453B1FDC08FD00E765AB /* DesignPattern.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9100453D1FDC08FD00E765AB /* DesignPattern */ = {
+			isa = PBXGroup;
+			children = (
+				910045C11FDD35C200E765AB /* 适配器模式 */,
+				910045AE1FDD238F00E765AB /* 观察者模式 */,
+				9100458A1FDC410200E765AB /* 建造者模式 */,
+				910045831FDC372A00E765AB /* 单例模式 */,
+				910045541FDC092D00E765AB /* 工厂模式 */,
+				910045661FDC2CF100E765AB /* 抽象工厂模式 */,
+				9100453E1FDC08FD00E765AB /* AppDelegate.h */,
+				9100453F1FDC08FD00E765AB /* AppDelegate.m */,
+				910045411FDC08FD00E765AB /* ViewController.h */,
+				910045421FDC08FD00E765AB /* ViewController.m */,
+				910045441FDC08FD00E765AB /* Main.storyboard */,
+				910045471FDC08FD00E765AB /* Assets.xcassets */,
+				910045491FDC08FD00E765AB /* LaunchScreen.storyboard */,
+				9100454C1FDC08FD00E765AB /* Info.plist */,
+				9100454D1FDC08FD00E765AB /* main.m */,
+			);
+			path = DesignPattern;
+			sourceTree = "<group>";
+		};
+		910045541FDC092D00E765AB /* 工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				910045551FDC09AF00E765AB /* Shape.h */,
+				910045561FDC0A1C00E765AB /* Circle.h */,
+				910045571FDC0A1C00E765AB /* Circle.m */,
+				910045591FDC0A5A00E765AB /* Square.h */,
+				9100455A1FDC0A5A00E765AB /* Square.m */,
+				9100455C1FDC0A8600E765AB /* Rectangle.h */,
+				9100455D1FDC0A8600E765AB /* Rectangle.m */,
+				9100455F1FDC0AD100E765AB /* ShapeFactory.h */,
+				910045601FDC0AD100E765AB /* ShapeFactory.m */,
+				910045621FDC0C4E00E765AB /* FactoryPatternViewController.h */,
+				910045631FDC0C4E00E765AB /* FactoryPatternViewController.m */,
+			);
+			path = "工厂模式";
+			sourceTree = "<group>";
+		};
+		910045661FDC2CF100E765AB /* 抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9100456D1FDC2E4500E765AB /* Color.h */,
+				9100456E1FDC2F8100E765AB /* Red.h */,
+				9100456F1FDC2F8100E765AB /* Red.m */,
+				910045711FDC2FC300E765AB /* Green.h */,
+				910045721FDC2FC300E765AB /* Green.m */,
+				910045741FDC2FF100E765AB /* Blue.h */,
+				910045751FDC2FF100E765AB /* Blue.m */,
+				910045671FDC2D3300E765AB /* AbstractFactory.h */,
+				910045681FDC2D3300E765AB /* AbstractFactory.m */,
+				910045771FDC307100E765AB /* MyShapeFactory.h */,
+				910045781FDC307100E765AB /* MyShapeFactory.m */,
+				9100457A1FDC314200E765AB /* MyColorFactory.h */,
+				9100457B1FDC314200E765AB /* MyColorFactory.m */,
+				9100457D1FDC31CD00E765AB /* FactoryProducer.h */,
+				9100457E1FDC31CD00E765AB /* FactoryProducer.m */,
+				910045801FDC327100E765AB /* AbstractFactoryViewController.h */,
+				910045811FDC327100E765AB /* AbstractFactoryViewController.m */,
+			);
+			path = "抽象工厂模式";
+			sourceTree = "<group>";
+		};
+		910045831FDC372A00E765AB /* 单例模式 */ = {
+			isa = PBXGroup;
+			children = (
+				910045841FDC387000E765AB /* User.h */,
+				910045851FDC387000E765AB /* User.m */,
+				910045871FDC3A0A00E765AB /* SingletonViewController.h */,
+				910045881FDC3A0A00E765AB /* SingletonViewController.m */,
+			);
+			path = "单例模式";
+			sourceTree = "<group>";
+		};
+		9100458A1FDC410200E765AB /* 建造者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				9100458B1FDC412200E765AB /* Item.h */,
+				9100458C1FDC413D00E765AB /* Packing.h */,
+				9100458D1FDC423500E765AB /* Wrapper.h */,
+				9100458E1FDC423500E765AB /* Wrapper.m */,
+				910045901FDC429400E765AB /* Bottle.h */,
+				910045911FDC429400E765AB /* Bottle.m */,
+				910045931FDC42E100E765AB /* Burger.h */,
+				910045941FDC42E100E765AB /* Burger.m */,
+				910045991FDC440900E765AB /* VegBurger.h */,
+				9100459A1FDC440900E765AB /* VegBurger.m */,
+				9100459C1FDC464F00E765AB /* ChickenBurger.h */,
+				9100459D1FDC464F00E765AB /* ChickenBurger.m */,
+				910045961FDC43C400E765AB /* ColdDrink.h */,
+				910045971FDC43C400E765AB /* ColdDrink.m */,
+				9100459F1FDC46C500E765AB /* Coke.h */,
+				910045A01FDC46C500E765AB /* Coke.m */,
+				910045A21FDC470700E765AB /* Pepsi.h */,
+				910045A31FDC470700E765AB /* Pepsi.m */,
+				910045A51FDC483200E765AB /* Meal.h */,
+				910045A61FDC483200E765AB /* Meal.m */,
+				910045A81FDC4AA300E765AB /* MealBuilder.h */,
+				910045A91FDC4AA300E765AB /* MealBuilder.m */,
+				910045AB1FDC4BCD00E765AB /* BuilderPatternViewController.h */,
+				910045AC1FDC4BCD00E765AB /* BuilderPatternViewController.m */,
+			);
+			path = "建造者模式";
+			sourceTree = "<group>";
+		};
+		910045AE1FDD238F00E765AB /* 观察者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				910045AF1FDD23D500E765AB /* Subject.h */,
+				910045B01FDD23D500E765AB /* Subject.m */,
+				910045B21FDD244800E765AB /* Observer.h */,
+				910045B31FDD244800E765AB /* Observer.m */,
+				910045B51FDD252600E765AB /* BinaryObserver.h */,
+				910045B61FDD252600E765AB /* BinaryObserver.m */,
+				910045B81FDD26F900E765AB /* OctalObserver.h */,
+				910045B91FDD26F900E765AB /* OctalObserver.m */,
+				910045BB1FDD273000E765AB /* HexaObserver.h */,
+				910045BC1FDD273000E765AB /* HexaObserver.m */,
+				910045BE1FDD289500E765AB /* ObserverPatternViewController.h */,
+				910045BF1FDD289500E765AB /* ObserverPatternViewController.m */,
+			);
+			path = "观察者模式";
+			sourceTree = "<group>";
+		};
+		910045C11FDD35C200E765AB /* 适配器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				910045C21FDD365100E765AB /* MediaPlayer.h */,
+				910045C31FDD369E00E765AB /* AdvancedMediaPlayer.h */,
+				910045C41FDD36F000E765AB /* VlcPlayer.h */,
+				910045C51FDD36F000E765AB /* VlcPlayer.m */,
+				910045C71FDD373B00E765AB /* Mp4Player.h */,
+				910045C81FDD373B00E765AB /* Mp4Player.m */,
+				910045CA1FDD377100E765AB /* MediaAdapter.h */,
+				910045CB1FDD377100E765AB /* MediaAdapter.m */,
+				910045CD1FDD39C000E765AB /* AdapterPatternViewController.h */,
+				910045CE1FDD39C000E765AB /* AdapterPatternViewController.m */,
+			);
+			path = "适配器模式";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9100453A1FDC08FD00E765AB /* DesignPattern */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 910045511FDC08FD00E765AB /* Build configuration list for PBXNativeTarget "DesignPattern" */;
+			buildPhases = (
+				910045371FDC08FD00E765AB /* Sources */,
+				910045381FDC08FD00E765AB /* Frameworks */,
+				910045391FDC08FD00E765AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesignPattern;
+			productName = DesignPattern;
+			productReference = 9100453B1FDC08FD00E765AB /* DesignPattern.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		910045331FDC08FD00E765AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = bluetown;
+				TargetAttributes = {
+					9100453A1FDC08FD00E765AB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 910045361FDC08FD00E765AB /* Build configuration list for PBXProject "DesignPattern" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 910045321FDC08FD00E765AB;
+			productRefGroup = 9100453C1FDC08FD00E765AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9100453A1FDC08FD00E765AB /* DesignPattern */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		910045391FDC08FD00E765AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9100454B1FDC08FD00E765AB /* LaunchScreen.storyboard in Resources */,
+				910045481FDC08FD00E765AB /* Assets.xcassets in Resources */,
+				910045461FDC08FD00E765AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		910045371FDC08FD00E765AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				910045431FDC08FD00E765AB /* ViewController.m in Sources */,
+				910045A41FDC470700E765AB /* Pepsi.m in Sources */,
+				910045761FDC2FF100E765AB /* Blue.m in Sources */,
+				910045581FDC0A1C00E765AB /* Circle.m in Sources */,
+				910045731FDC2FC300E765AB /* Green.m in Sources */,
+				910045981FDC43C400E765AB /* ColdDrink.m in Sources */,
+				910045951FDC42E100E765AB /* Burger.m in Sources */,
+				9100458F1FDC423500E765AB /* Wrapper.m in Sources */,
+				910045B11FDD23D500E765AB /* Subject.m in Sources */,
+				910045861FDC387000E765AB /* User.m in Sources */,
+				9100457C1FDC314200E765AB /* MyColorFactory.m in Sources */,
+				910045821FDC327100E765AB /* AbstractFactoryViewController.m in Sources */,
+				9100454E1FDC08FD00E765AB /* main.m in Sources */,
+				910045791FDC307100E765AB /* MyShapeFactory.m in Sources */,
+				9100457F1FDC31CD00E765AB /* FactoryProducer.m in Sources */,
+				910045AD1FDC4BCD00E765AB /* BuilderPatternViewController.m in Sources */,
+				910045701FDC2F8100E765AB /* Red.m in Sources */,
+				910045C01FDD289500E765AB /* ObserverPatternViewController.m in Sources */,
+				910045B41FDD244800E765AB /* Observer.m in Sources */,
+				9100459E1FDC464F00E765AB /* ChickenBurger.m in Sources */,
+				910045A11FDC46C500E765AB /* Coke.m in Sources */,
+				9100455B1FDC0A5A00E765AB /* Square.m in Sources */,
+				910045CC1FDD377100E765AB /* MediaAdapter.m in Sources */,
+				910045AA1FDC4AA300E765AB /* MealBuilder.m in Sources */,
+				910045C91FDD373B00E765AB /* Mp4Player.m in Sources */,
+				910045891FDC3A0A00E765AB /* SingletonViewController.m in Sources */,
+				9100459B1FDC440900E765AB /* VegBurger.m in Sources */,
+				910045B71FDD252600E765AB /* BinaryObserver.m in Sources */,
+				910045BD1FDD273000E765AB /* HexaObserver.m in Sources */,
+				910045BA1FDD26F900E765AB /* OctalObserver.m in Sources */,
+				910045611FDC0AD100E765AB /* ShapeFactory.m in Sources */,
+				910045691FDC2D3300E765AB /* AbstractFactory.m in Sources */,
+				910045CF1FDD39C000E765AB /* AdapterPatternViewController.m in Sources */,
+				910045401FDC08FD00E765AB /* AppDelegate.m in Sources */,
+				910045921FDC429400E765AB /* Bottle.m in Sources */,
+				910045C61FDD36F000E765AB /* VlcPlayer.m in Sources */,
+				910045641FDC0C4E00E765AB /* FactoryPatternViewController.m in Sources */,
+				910045A71FDC483200E765AB /* Meal.m in Sources */,
+				9100455E1FDC0A8600E765AB /* Rectangle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		910045441FDC08FD00E765AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				910045451FDC08FD00E765AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		910045491FDC08FD00E765AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9100454A1FDC08FD00E765AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9100454F1FDC08FD00E765AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		910045501FDC08FD00E765AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		910045521FDC08FD00E765AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AULY77T89F;
+				INFOPLIST_FILE = DesignPattern/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluetown.DesignPattern;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		910045531FDC08FD00E765AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AULY77T89F;
+				INFOPLIST_FILE = DesignPattern/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bluetown.DesignPattern;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		910045361FDC08FD00E765AB /* Build configuration list for PBXProject "DesignPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9100454F1FDC08FD00E765AB /* Debug */,
+				910045501FDC08FD00E765AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		910045511FDC08FD00E765AB /* Build configuration list for PBXNativeTarget "DesignPattern" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				910045521FDC08FD00E765AB /* Debug */,
+				910045531FDC08FD00E765AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 910045331FDC08FD00E765AB /* Project object */;
+}
